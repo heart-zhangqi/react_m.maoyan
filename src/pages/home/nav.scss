@@ -1,0 +1,59 @@
+@import '../../assets/style/theme.scss';
+@import '../../assets/style/border.scss';
+.homeNav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: .44rem;
+    width: 100%;
+    background: #fff!important;
+    @include border(#777,0 0 .01rem 0);
+    li{
+        flex: 1;
+        a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            @include border(transparent,0 0 .02rem 0);
+
+            i{
+                color:#777;
+                font-size: 0.28rem;
+                padding:0.1rem
+            }
+            span{
+                line-height: .44rem;
+                text-align: center;
+                color:#777;
+                font-size: 0.18rem;
+            }
+            
+        }
+       .active{
+                i{
+                    color:$theme
+                }
+                span{
+                    color:$theme
+                }
+            @include border($theme,0 0 .04rem 0);
+                
+            }
+    }
+    li:first-child{
+        text-align: left;
+        a{
+            flex-direction: row;
+            span{
+                font-size: 0.14rem;
+            }
+            i{
+                font-size: 0.22rem;
+            }
+        }
+    }
+    li:last-child{
+        text-align: right;
+    }
+}

@@ -1,0 +1,20 @@
+
+.home{
+    display: flex;
+    width: 100%;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: wrap;
+    .home-box{
+        flex:1;
+        width: 100%;
+
+    }
+    .homeNav{
+        height: .44rem;
+        width: 100%;
+
+    }
+}
